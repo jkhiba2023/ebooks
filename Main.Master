@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="E_book.User" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>E Book Walla !!!!</title>
+    <link href="font/fontawesome-free-6.5.2-web/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+  .footer{
+      margin:auto;
+  }
+  body,span{
+      color:#0D6EFD;
+  }
+  
+</style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div>
+           <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+               <div class="container">
+                   <div class="navbar-header">
+                       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                           <span class="sr-only">Toggle Navigation</span>
+                           <span class="icon bar"></span>
+                           <span class="icon bar"></span>
+                           <span class="icon bar"></span>
+                       </button>
+                       <a class="navbar-brand" href="Register.aspx"><span><i class="fa-solid fa-book ">Book Walla</i></span></a>
+                   </div>
+                   <div class="navbar-collapse collapse">
+                       <ul class="nav navbar-nav navbar-right">
+                           <li class="active"><a href="Default.aspx" style="color:#0D6EFD;">Home</a></li>
+                           <li><a href="AboutUs_Main.aspx" style="color:#0D6EFD;">About</a></li>
+                           <li><a href="ContactUs_Main.aspx" style="color:#0D6EFD;">Contact Us</a></li>
+                           <li><a href="#" style="color:#0D6EFD;">Blog</a></li>
+                           <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#0D6EFD;">Books<b class="caret"></b></a>
+                               <ul class="dropdown-menu">
+                                   <li class="dropdown-header"><a href="#">Motivational</a></li>
+                                   <li role="separator" class="divider"></li>
+                                   <li><a href="#" style="color:#0D6EFD;">Comics</a></li>
+                                   <li><a href="#" style="color:#0D6EFD;">Story</a></li>
+                                   <li role="separator" class="divider"></li>
+                                   <li class="dropdown-header"><a href="#">Study Matterial</a></li>
+                                   <li role="separator" class="divider"></li>
+                                   <li><a href="#" style="color:#0D6EFD;">NCRT</a></li>
+                                   <li><a href="#" style="color:#0D6EFD;">I.T Developers</a></li>
+                               </ul>
+                               <li class="active"><a href="SignUp.aspx" style="color:#0D6EFD;">SignUp</a></li>
+                               <li><a href="Signin.aspx" style="color:#0D6EFD;">SignIn</a></li>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+           </div>
+       </div>
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <div style="display:flex; text-align:center; background-color:#C9D1CA;">
+            <hr />
+            <div class="footer" style=" width:100% ; height:40px; background-color:#C9D1CA; padding-top:8px;">
+             <b style="color:#0D6EFD;">&copy;</b> <Big style="color:#0D6EFD;">Reservered With <i class="fa-solid fa-book ">Book Walla</i> Since 2024</Big> 
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
+
